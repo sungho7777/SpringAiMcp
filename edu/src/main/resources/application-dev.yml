@@ -23,6 +23,10 @@ spring:
     resources:
       static-locations: file:src/main/resources/static/
   servlet:
+    encoding:
+      charset: UTF-8
+      enabled: true
+      force: true
     multipart:
       max-request-size: 20MB
       enabled: true

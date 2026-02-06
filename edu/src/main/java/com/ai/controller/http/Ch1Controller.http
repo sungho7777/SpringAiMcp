@@ -7,3 +7,12 @@ Content-Type: application/x-www-form-urlencoded
 Accept: text/plain
 
 prompt=인천 부평의 맛집 알려줘.
+
+
+### 2. Chat Stream
+### @("/stream")
+POST http://localhost:8080/ch1/stream
+Content-Type: application/x-www-form-urlencoded
+Accept: application/x-ndjson;charset=UTF-8
+
+prompt=충남 예산 시장 가면 뭘 먹어야 할까??
