@@ -40,19 +40,18 @@ public class Ch1Controller {
     }
 
     // 3. Chat (Few-Shot Prompting)
-    @RequestMapping("/chain")
-    public Flux<String> chatChainOfThought(@RequestParam("prompt") String userPrompt) {
-        log.info(userPrompt);
-        return ch1ChatClientService.chatChainOfThought(userPrompt);
-    }
-
-    // 4. Chat (Chain-of-Thought Prompting)
     @RequestMapping("/few")
     public String chatFewShot(@RequestParam("prompt") String userPrompt) {
         log.info(userPrompt);
         return ch1ChatClientService.chatFewShot(userPrompt);
     }
 
+    // 4. Chat (Chain-of-Thought Prompting)
+    @RequestMapping("/chain")
+    public Flux<String> chatChainOfThought(@RequestParam("prompt") String userPrompt) {
+        log.info(userPrompt);
+        return ch1ChatClientService.chatChainOfThought(userPrompt);
+    }
 
     // 5. Chat Memory
     @RequestMapping("/memory")

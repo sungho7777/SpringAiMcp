@@ -32,6 +32,53 @@ public class Ch1_ChatClientService {
                 .content();
     }
 
+    public String chatFewShot(String question) {
+
+        String userText = """
+                사용자가 요청한 명소 또는 맛집 정보를 JSON 형식으로 만들어 줍니다.
+                아래 규칙을 반드시 지켜주세요:
+                1. 요청한 정보에 대해 10개의 정보를 조회 합니다.
+                2. 맛집인 경우 메뉴는 5개이상 알려줘
+                2. 응답은 특수문자 형식 없이, JSON 문자열로만 반환해야 합니다.
+        
+                예시1:
+                서울 종로에 맞집 정보 알려줘
+                JSON 응답:
+                [
+                    {
+                      "name": "옥순당",
+                      "menu": ["감자탕", "김치찌개",...],
+                      "address": "서울시 중구 371번지",
+                       "lat": 37.4985,
+                       "lng": 127.0300
+                    },
+                    {
+                      "name": "옥순당",
+                      "menu": ["감자탕", "김치찌개",....],
+                      "address": "서울시 중구 371번지",
+                       "lat": 37.4985,
+                       "lng": 127.0300
+                    },...
+                ]
+                
+                예시2:
+                서울 종로에 숙박업소 정보 알려줘
+                JSON 응답:
+                {
+                  "name": "옥순장",
+                  "address": "서울시 중구 371번지",
+                   "lat": 37.4985,
+                   "lng": 127.0300
+                }
+
+                고객 주문: %s""".formatted(question);
+
+        return chatClient.prompt()
+                .user(userText)
+                .call()
+                .content();
+    }
+
     public Flux<String> chatChainOfThought(String question) {
         String userText = """
                 %s
@@ -59,49 +106,4 @@ public class Ch1_ChatClientService {
                 .content();
     }
 
-    public String chatFewShot(String question) {
-
-        String userText = """
-                사용자가 요청한 명소 또는 맛집 정보를 JSON 형식으로 만들어 줍니다.
-                아래 규칙을 반드시 지켜주세요:
-                1. 요청한 정보에 대해 10개의 정보를 조회 합니다.
-                2. 맛집인 경우 메뉴는 5개이상 알려줘
-                2. 응답은 특수문자 형식 없이, JSON 문자열로만 반환해야 합니다.
-        
-                예시1:
-                서울 종로에 맞집 정보 알려줘
-                JSON 응답:
-                [
-                {
-                  "name": "옥순당",
-                  "menu": ["감자탕", "김치찌개",...],
-                  "address": "서울시 중구 371번지",
-                   "lat": 37.4985,
-                   "lng": 127.0300
-                },
-                {
-                  "name": "옥순당",
-                  "menu": ["감자탕", "김치찌개",....],
-                  "address": "서울시 중구 371번지",
-                   "lat": 37.4985,
-                   "lng": 127.0300
-                },...
-                ]
-                예시2:
-                서울 종로에 숙박업소 정보 알려줘
-                JSON 응답:
-                {
-                  "name": "옥순장",
-                  "address": "서울시 중구 371번지",
-                   "lat": 37.4985,
-                   "lng": 127.0300
-                }
-
-                고객 주문: %s""".formatted(question);
-
-        return chatClient.prompt()
-                .user(userText)
-                .call()
-                .content();
-    }
 }

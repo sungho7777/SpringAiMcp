@@ -16,3 +16,12 @@ Content-Type: application/x-www-form-urlencoded
 Accept: application/x-ndjson;charset=UTF-8
 
 prompt=충남 예산 시장 가면 뭘 먹어야 할까??
+
+
+### 3. Chat (Few-Shot Prompting)
+### @("/few")
+POST http://localhost:8080/ch1/few
+Content-Type: application/x-www-form-urlencoded
+Accept: application/x-ndjson;charset=UTF-8
+
+prompt=충남 예산의 맛집 알려줘.
