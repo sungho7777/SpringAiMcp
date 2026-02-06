@@ -1,6 +1,18 @@
+# Tomcat Server
 server:
   port: 8080
+
+# Logging
+logging:
+  level:
+    root: INFO
+
+
+
+# Spring Boot
 spring:
+  config:
+    import: optional:file:.env[.properties]
   application:
     name: edu
   thymeleaf:
@@ -10,9 +22,21 @@ spring:
   web:
     resources:
       static-locations: file:src/main/resources/static/
-
+  servlet:
+    multipart:
+      max-request-size: 20MB
+      enabled: true
+      max-file-size: 20MB
   devtools:
     restart:
       enabled: true
     livereload:
       enabled: true
+  ai:
+    openai:
+      api-key: ${OPEN_AI_KEY}
+      chat:
+        options:
+          model: gpt-4o
+          temperature: 1.0
+          max-tokens: 1000
