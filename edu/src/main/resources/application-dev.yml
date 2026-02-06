@@ -44,3 +44,9 @@ spring:
           model: gpt-4o
           temperature: 1.0
           max-tokens: 1000
+springdoc:
+  swagger-ui:
+    path: /swagger
+    operations-sorter: none
+    tags-sorter: none
+
