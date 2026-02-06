@@ -36,5 +36,12 @@ Accept: application/x-ndjson;charset=UTF-8
 prompt=1리터에 18km를 달리는 차가 서울에서 양양까지 시속 100km로 달렸을때 총 소요비용은??
 
 
+### 5. Chat Memory
+### @("/memory")
+POST http://localhost:8080/ch1/memory
+Content-Type: application/x-www-form-urlencoded
+Accept: application/x-ndjson;charset=UTF-8
+
+prompt=이제부터 내 이름은 성호야. 기억해!
 
 
