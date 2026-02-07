@@ -49,4 +49,8 @@ springdoc:
     path: /swagger
     operations-sorter: none
     tags-sorter: none
-
+  group-configs:
+    - group: Chapter_1_Chat_Completion_Controller
+      paths-to-match: /ch1/**
+    - group: Chapter_2_Prompt_Template_Controller
+      paths-to-match: /ch2/**
