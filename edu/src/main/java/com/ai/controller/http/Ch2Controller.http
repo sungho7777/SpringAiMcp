@@ -31,3 +31,11 @@ Content-Type: application/x-www-form-urlencoded
 Accept: application/json;charset=UTF-8
 
 location=강원도 강릉&content=등산 코스&language=Korean
+
+### 5. ParameterizedType
+### @("/parameterized-type-reference")
+POST http://localhost:8080/ch2/parameterized-type-reference
+Content-Type: application/x-www-form-urlencoded
+Accept: application/json;charset=UTF-8
+
+location=전주&content=한옥마을&language=Korean
