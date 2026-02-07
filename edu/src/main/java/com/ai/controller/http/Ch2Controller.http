@@ -1,0 +1,9 @@
+### package com.ai.controller.Ch2Controller
+
+### 1. Prompt Template
+### @("/prompt-template")
+POST http://localhost:8080/ch2/prompt-template
+Content-Type: application/x-www-form-urlencoded
+Accept: text/plain;charset=UTF-8
+
+location=서울&content=병원&language=Korean
