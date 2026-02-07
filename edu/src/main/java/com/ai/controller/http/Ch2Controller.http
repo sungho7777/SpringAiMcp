@@ -7,3 +7,11 @@ Content-Type: application/x-www-form-urlencoded
 Accept: text/plain;charset=UTF-8
 
 location=서울&content=병원&language=Korean
+
+### 2. ListOutputConverter
+### @("/list-output")
+POST http://localhost:8080/ch2/list-output
+Content-Type: application/x-www-form-urlencoded
+Accept: application/json;charset=UTF-8
+
+location=인천&content=한의원&language=Korean
