@@ -15,3 +15,11 @@ Content-Type: application/x-www-form-urlencoded
 Accept: application/json;charset=UTF-8
 
 location=인천&content=한의원&language=Korean
+
+### 3. MapOutputConverter
+### @("/map-output")
+POST http://localhost:8080/ch2/map-output
+Content-Type: application/x-www-form-urlencoded
+Accept: application/json;charset=UTF-8
+
+location=충남 예산&content=시장(장터)&language=Korean
