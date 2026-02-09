@@ -522,3 +522,95 @@
   "description" : "지역, 구분",
   "additionalProperties" : false
 }
+2026-02-09 14:15:49, Generated JSON Schema:
+{
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
+  "type" : "object",
+  "properties" : {
+    "location" : {
+      "type" : "string"
+    },
+    "shops" : {
+      "type" : "array",
+      "items" : {
+        "type" : "object",
+        "properties" : {
+          "address" : {
+            "type" : "string"
+          },
+          "description" : {
+            "type" : "string"
+          },
+          "latitude" : {
+            "type" : "number",
+            "format" : "double"
+          },
+          "longitude" : {
+            "type" : "number",
+            "format" : "double"
+          },
+          "menu" : {
+            "type" : "array",
+            "items" : {
+              "type" : "string"
+            }
+          },
+          "name" : {
+            "type" : "string"
+          }
+        },
+        "required" : [ "address", "description", "latitude", "longitude", "menu", "name" ],
+        "description" : "이름, 설명, 주소, 좌표"
+      }
+    }
+  },
+  "required" : [ "location", "shops" ],
+  "description" : "지역, 구분",
+  "additionalProperties" : false
+}
+2026-02-09 14:17:50, Generated JSON Schema:
+{
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
+  "type" : "object",
+  "properties" : {
+    "location" : {
+      "type" : "string"
+    },
+    "shops" : {
+      "type" : "array",
+      "items" : {
+        "type" : "object",
+        "properties" : {
+          "address" : {
+            "type" : "string"
+          },
+          "description" : {
+            "type" : "string"
+          },
+          "latitude" : {
+            "type" : "number",
+            "format" : "double"
+          },
+          "longitude" : {
+            "type" : "number",
+            "format" : "double"
+          },
+          "menu" : {
+            "type" : "array",
+            "items" : {
+              "type" : "string"
+            }
+          },
+          "name" : {
+            "type" : "string"
+          }
+        },
+        "required" : [ "address", "description", "latitude", "longitude", "menu", "name" ],
+        "description" : "이름, 설명, 주소, 좌표"
+      }
+    }
+  },
+  "required" : [ "location", "shops" ],
+  "description" : "지역, 구분",
+  "additionalProperties" : false
+}
