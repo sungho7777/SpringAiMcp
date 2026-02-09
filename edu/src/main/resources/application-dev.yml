@@ -58,3 +58,5 @@ springdoc:
       paths-to-match: /ch1/**
     - group: Chapter_2_Prompt_Template_Controller
       paths-to-match: /ch2/**
+    - group: Chapter_3_Advisor_Controller
+      paths-to-match: /ch3/**
