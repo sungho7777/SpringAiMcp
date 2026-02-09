@@ -1,0 +1,9 @@
+### package com.ai.controller.Ch4Controller
+
+### 1. Generate Image for URL
+### @("/generate-image-url")
+POST http://localhost:8080/ch4/generate-image-url
+Content-Type: application/x-www-form-urlencoded
+Accept: application/x-ndjson;charset=UTF-8
+
+prompt=2050년 유행 할거 같은 개인 비행기 디자인으로 애니메이션화 해서 이미지 생성해줘.
