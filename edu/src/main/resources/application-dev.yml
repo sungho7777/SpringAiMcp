@@ -6,8 +6,12 @@ server:
 logging:
   level:
     root: INFO
-
-
+    org:
+      springframework:
+        ai:
+          chat:
+            client:
+              advisor: DEBUG  # To see the logs, set the logging level for the advisor package to DEBUG:
 
 # Spring Boot
 spring:

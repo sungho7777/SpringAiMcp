@@ -1,0 +1,9 @@
+### package com.ai.controller.Ch3Controller
+
+### 1. Advisor
+### @("/completion")
+POST http://localhost:8080/ch3/completion
+Content-Type: application/x-www-form-urlencoded
+Accept: text/plain;charset=UTF-8
+
+prompt=테슬라 Y 차량에 대해 장점, 단점 알려줘.
