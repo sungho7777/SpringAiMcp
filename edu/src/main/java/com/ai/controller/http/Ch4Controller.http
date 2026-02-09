@@ -16,3 +16,13 @@ Content-Type: application/x-www-form-urlencoded
 Accept: application/x-ndjson;charset=UTF-8
 
 prompt=야경이 멋진 인천 앞바다의 모습
+
+
+### 3. Image Analysis
+### @("/image-analysis")
+POST http://localhost:8080/ch4/image-analysis
+Content-Type: application/x-www-form-urlencoded
+Accept: application/x-ndjson;charset=UTF-8
+
+question=
+attach=
