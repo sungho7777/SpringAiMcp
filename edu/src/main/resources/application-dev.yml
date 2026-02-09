@@ -70,3 +70,5 @@ springdoc:
       paths-to-match: /ch2/**
     - group: Chapter_3_Advisor_Controller
       paths-to-match: /ch3/**
+    - group: Chapter_4_Multimodality_API_Images_&_Vision_Controller
+      paths-to-match: /ch4/**

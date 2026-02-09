@@ -26,3 +26,13 @@ Accept: application/x-ndjson;charset=UTF-8
 
 question=
 attach=
+
+
+### 4. Video Analysis
+### @("/octet-stream")
+POST http://localhost:8080/ch4/octet-stream
+Content-Type: application/x-www-form-urlencoded
+Accept: application/x-ndjson;charset=UTF-8
+
+question=
+attach=
