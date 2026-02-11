@@ -72,3 +72,5 @@ springdoc:
       paths-to-match: /ch3/**
     - group: Chapter_4_Multimodality_API_Images_&_Vision_Controller
       paths-to-match: /ch4/**
+    - group: Chapter_5_Multimodality_API_Audio_and_Speech_Controller
+      paths-to-match: /ch5/**
