@@ -7,3 +7,12 @@ Content-Type: application/x-www-form-urlencoded
 Accept: application/json;charset=UTF-8
 
 prompt=내가 하는 말을 오디오로 변환 한다고?
+
+
+### 2. Text to Speech: Chat
+### @("/text-to-speech-chat")
+POST http://localhost:8080/ch5/text-to-speech
+Content-Type: application/x-www-form-urlencoded
+Accept: application/json;charset=UTF-8
+
+prompt=너는 누구야??
