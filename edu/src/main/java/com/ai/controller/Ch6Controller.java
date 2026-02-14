@@ -1,5 +1,6 @@
 package com.ai.controller;
 
+import com.ai.app.service.ch6.Ch6_AccessSystemToolsService;
 import com.ai.app.service.ch6.Ch6_SearchCustomerToolsService;
 import com.ai.app.service.ch6.Ch6_ShoppingToolsService;
 import com.ai.app.service.ch6.Ch6_TimeWeatherToolsService;
@@ -8,6 +9,9 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.multipart.MultipartFile;
+
+import java.io.IOException;
 
 @RestController
 @RequestMapping("/ch6")
@@ -23,6 +27,8 @@ public class Ch6Controller {
     final Ch6_SearchCustomerToolsService ch6SearchCustomerToolsService;
     // 3. Recommendation
     final Ch6_ShoppingToolsService ch6ShoppingToolsService;
+    // 4. Access System
+    final Ch6_AccessSystemToolsService ch6OpenAiImageService;
 
     // 1. Date Time
     @RequestMapping("/data-time")
@@ -52,4 +58,10 @@ public class Ch6Controller {
         return ch6ShoppingToolsService.getPropensity(userPrompt, userId);
     }
 
+    // 4. Access System
+    @RequestMapping(value = "/access-system")
+    public String accessSystem(
+            @RequestParam(value="attach", required = false) MultipartFile attach) throws IOException {
+        return ch6OpenAiImageService.imageAnalysisText(attach.getContentType(), attach.getBytes());
+    }
 }
