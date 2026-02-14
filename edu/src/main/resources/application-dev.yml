@@ -75,3 +75,5 @@ springdoc:
       paths-to-match: /ch4/**
     - group: Chapter_5_Multimodality_API_Audio_and_Speech_Controller
       paths-to-match: /ch5/**
+    - group: Chapter_6_Tool_Calling_Controller
+      paths-to-match: /ch6/**
