@@ -1,5 +1,6 @@
 package com.ai.controller;
 
+import com.ai.app.service.ch6.Ch6_SearchCustomerToolsService;
 import com.ai.app.service.ch6.Ch6_TimeWeatherToolsService;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
@@ -16,12 +17,22 @@ public class Ch6Controller {
 
     // 1. Date Time
     final Ch6_TimeWeatherToolsService ch6ChatClientService;
+    // 2. Customer Inquiry - JSON
+    // 2. Customer Inquiry - String
+    final Ch6_SearchCustomerToolsService ch6SearchCustomerToolsService;
 
     // 1. Date Time
     @RequestMapping("/data-time")
     public String chatTimeWeather(@RequestParam("prompt") String userPrompt) {
         log.info(userPrompt);
         return ch6ChatClientService.chat1(userPrompt);
+    }
+
+    // 2. Customer Inquiry - JSON
+    @RequestMapping("/customer-inquiry-json")
+    public String getCustomer(@RequestParam("prompt") String userPrompt) {
+        log.info(userPrompt);
+        return ch6SearchCustomerToolsService.getCustomer(userPrompt);
     }
 
 }
