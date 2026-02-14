@@ -1,6 +1,7 @@
 package com.ai.controller;
 
 import com.ai.app.service.ch6.Ch6_SearchCustomerToolsService;
+import com.ai.app.service.ch6.Ch6_ShoppingToolsService;
 import com.ai.app.service.ch6.Ch6_TimeWeatherToolsService;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
@@ -20,6 +21,8 @@ public class Ch6Controller {
     // 2. Customer Inquiry - JSON
     // 2. Customer Inquiry - String
     final Ch6_SearchCustomerToolsService ch6SearchCustomerToolsService;
+    // 3. Recommendation
+    final Ch6_ShoppingToolsService ch6ShoppingToolsService;
 
     // 1. Date Time
     @RequestMapping("/data-time")
@@ -33,6 +36,20 @@ public class Ch6Controller {
     public String getCustomer(@RequestParam("prompt") String userPrompt) {
         log.info(userPrompt);
         return ch6SearchCustomerToolsService.getCustomer(userPrompt);
+    }
+
+    // 2. Customer Inquiry - String
+    @RequestMapping("/customer-inquiry-string")
+    public String getCustomerString(@RequestParam("prompt") String userPrompt) {
+        log.info(userPrompt);
+        return ch6SearchCustomerToolsService.getCustomerString(userPrompt);
+    }
+
+    // 3. Recommendation
+    @RequestMapping("/recommendation")
+    public String getOrderedByCustomer(@RequestParam("prompt") String userPrompt, @RequestParam("user_id") String userId) {
+        log.info(userPrompt);
+        return ch6ShoppingToolsService.getPropensity(userPrompt, userId);
     }
 
 }
