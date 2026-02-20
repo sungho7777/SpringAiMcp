@@ -1894,3 +1894,15 @@ Rewritten query:
 ', metadata={messageType=USER}, messageType=USER}
 2026-02-20 14:21:25, response: [SimpleLoggerAdvisor] Custom response: Generation[assistantMessage=AssistantMessage [messageType=ASSISTANT, toolCalls=[], textContent=모집 시기, metadata={role=ASSISTANT, messageType=ASSISTANT, finishReason=STOP, refusal=, index=0, annotations=[], id=chatcmpl-DBDF68a0mQfMfay9vT4wlV7f5ynfj}], chatGenerationMetadata=DefaultChatGenerationMetadata[finishReason='STOP', filters=0, metadata=0]]
 2026-02-20 14:21:26, response: [SimpleLoggerAdvisor] Custom response: Generation[assistantMessage=AssistantMessage [messageType=ASSISTANT, toolCalls=[], textContent=모집은 공고일로부터 8월 8일(금) 18시까지입니다., metadata={role=ASSISTANT, messageType=ASSISTANT, refusal=, finishReason=STOP, index=0, annotations=[], id=chatcmpl-DBDF7lofRC8SAAEGZWjpP5TWuFgSz, reasoningContent=}], chatGenerationMetadata=DefaultChatGenerationMetadata[finishReason='STOP', filters=0, metadata=0]]
+2026-02-20 14:23:08, request: [SimpleLoggerAdvisor] Custom request: UserMessage{content='The trend in the AI industry in North America is ?', metadata={messageType=USER}, messageType=USER}
+2026-02-20 14:23:08, request: [SimpleLoggerAdvisor] Custom request: UserMessage{content='Given a user query, translate it to korean.
+If the query is already in korean, return it unchanged.
+If you don't know the language of the query, return it unchanged.
+Do not add explanations nor any other text.
+
+Original query: The trend in the AI industry in North America is ?
+
+Translated query:
+', metadata={messageType=USER}, messageType=USER}
+2026-02-20 14:23:09, response: [SimpleLoggerAdvisor] Custom response: Generation[assistantMessage=AssistantMessage [messageType=ASSISTANT, toolCalls=[], textContent=북미의 AI 산업 트렌드는?, metadata={role=ASSISTANT, messageType=ASSISTANT, finishReason=STOP, refusal=, index=0, annotations=[], id=chatcmpl-DBDGmse9NSz8yRLjDbtEIuCnNUJeC}], chatGenerationMetadata=DefaultChatGenerationMetadata[finishReason='STOP', filters=0, metadata=0]]
+2026-02-20 14:23:12, response: [SimpleLoggerAdvisor] Custom response: Generation[assistantMessage=AssistantMessage [messageType=ASSISTANT, toolCalls=[], textContent=AI 전공자를 위한 북미 지역의 경향은 산업계로의 취업이 점점 쏠리고 있으며, 학계로 이동하는 인재는 점차 감소하는 추세입니다. 2011년에 AI 전공 신규 박사의 산업계와 학계 진출률이 거의 비슷했으나, 2022년에는 산업계로의 진출 비율이 크게 증가하고 학계로의 진출 비율은 감소했습니다., metadata={role=ASSISTANT, messageType=ASSISTANT, refusal=, finishReason=STOP, index=0, annotations=[], id=chatcmpl-DBDGoVCO8pBtRHFNKhJCvzDsmFa10, reasoningContent=}], chatGenerationMetadata=DefaultChatGenerationMetadata[finishReason='STOP', filters=0, metadata=0]]
