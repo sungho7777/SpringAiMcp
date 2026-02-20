@@ -1883,3 +1883,14 @@ Standalone query:
 - 아시아: 591백만 달러
 - 중동: 369백만 달러
 - 중남미: 248백만 달러, metadata={role=ASSISTANT, messageType=ASSISTANT, refusal=, finishReason=STOP, index=0, annotations=[], id=chatcmpl-DBDE09MUWOwJbRyLYjaZJ8FgtQBlp, reasoningContent=}], chatGenerationMetadata=DefaultChatGenerationMetadata[finishReason='STOP', filters=0, metadata=0]]
+2026-02-20 14:21:24, request: [SimpleLoggerAdvisor] Custom request: UserMessage{content='오늘은 날씨가 춥네 오늘은 화창한 날씨네 그런데 언제 모집이야', metadata={messageType=USER}, messageType=USER}
+2026-02-20 14:21:24, request: [SimpleLoggerAdvisor] Custom request: UserMessage{content='Given a user query, rewrite it to provide better results when querying a vector store.
+Remove any irrelevant information, and ensure the query is concise and specific.
+
+Original query:
+오늘은 날씨가 춥네 오늘은 화창한 날씨네 그런데 언제 모집이야
+
+Rewritten query:
+', metadata={messageType=USER}, messageType=USER}
+2026-02-20 14:21:25, response: [SimpleLoggerAdvisor] Custom response: Generation[assistantMessage=AssistantMessage [messageType=ASSISTANT, toolCalls=[], textContent=모집 시기, metadata={role=ASSISTANT, messageType=ASSISTANT, finishReason=STOP, refusal=, index=0, annotations=[], id=chatcmpl-DBDF68a0mQfMfay9vT4wlV7f5ynfj}], chatGenerationMetadata=DefaultChatGenerationMetadata[finishReason='STOP', filters=0, metadata=0]]
+2026-02-20 14:21:26, response: [SimpleLoggerAdvisor] Custom response: Generation[assistantMessage=AssistantMessage [messageType=ASSISTANT, toolCalls=[], textContent=모집은 공고일로부터 8월 8일(금) 18시까지입니다., metadata={role=ASSISTANT, messageType=ASSISTANT, refusal=, finishReason=STOP, index=0, annotations=[], id=chatcmpl-DBDF7lofRC8SAAEGZWjpP5TWuFgSz, reasoningContent=}], chatGenerationMetadata=DefaultChatGenerationMetadata[finishReason='STOP', filters=0, metadata=0]]
