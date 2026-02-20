@@ -101,3 +101,5 @@ springdoc:
       paths-to-match: /ch6/**
     - group: Chapter_7_Embedding_Model_Controller
       paths-to-match: /ch7/**
+    - group: Chapter_8_RAG_(Retrieval_Augmented_Generation)_Controller
+      paths-to-match: /ch8/**

@@ -1925,3 +1925,403 @@ Query variants:
 2. 전 세계 국제기구들이 추진하는 인공지능 정책에 대해 조사해줘
 3. 국제기구 간 인공지능 협력 사례와 그 영향을 설명해줘, metadata={role=ASSISTANT, messageType=ASSISTANT, finishReason=STOP, refusal=, index=0, annotations=[], id=chatcmpl-DBDHxWzjyn2zJX9wA6AZAcplq1qQ4}], chatGenerationMetadata=DefaultChatGenerationMetadata[finishReason='STOP', filters=0, metadata=0]]
 2026-02-20 14:24:27, response: [SimpleLoggerAdvisor] Custom response: Generation[assistantMessage=AssistantMessage [messageType=ASSISTANT, toolCalls=[], textContent=OECD는 2019년 'AI에 관한 이사회의 권고사항'에서 인권과 민주적 가치를 존중하는 AI 사용을 장려하는 원칙을 마련했다. 이 원칙은 포용적 성장, 인간 중심의 가치와 공정성, 투명성, 보안성, 책임성을 포함한다. 또한, AI 연구개발 투자와 인적 역량 강화 등을 정책 입안자를 위한 원칙으로 제시한다. 2020년에는 'OECD AI 정책관측소'를 창설하여 회원국과 전 세계 국가들이 원칙을 실행하도록 지원하고 관련 정보를 제공하고 있다., metadata={role=ASSISTANT, messageType=ASSISTANT, refusal=, finishReason=STOP, index=0, annotations=[], id=chatcmpl-DBDI1iBF3OspibhUkTHb2sqIW3VHD, reasoningContent=}], chatGenerationMetadata=DefaultChatGenerationMetadata[finishReason='STOP', filters=0, metadata=0]]
+2026-02-20 14:25:38, Generated JSON Schema:
+{
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
+  "type" : "object",
+  "properties" : {
+    "location" : {
+      "type" : "string"
+    },
+    "shops" : {
+      "type" : "array",
+      "items" : {
+        "type" : "object",
+        "properties" : {
+          "address" : {
+            "type" : "string"
+          },
+          "description" : {
+            "type" : "string"
+          },
+          "latitude" : {
+            "type" : "number",
+            "format" : "double"
+          },
+          "longitude" : {
+            "type" : "number",
+            "format" : "double"
+          },
+          "menu" : {
+            "type" : "array",
+            "items" : {
+              "type" : "string"
+            }
+          },
+          "name" : {
+            "type" : "string"
+          }
+        },
+        "required" : [ "address", "description", "latitude", "longitude", "menu", "name" ],
+        "description" : "이름, 설명, 주소, 좌표"
+      }
+    }
+  },
+  "required" : [ "location", "shops" ],
+  "description" : "지역, 구분",
+  "additionalProperties" : false
+}
+2026-02-20 14:25:39, Using the vector table name: chat_pgvector. Is empty: false
+2026-02-20 14:25:39, Using the vector table name: vector_store. Is empty: false
+2026-02-20 14:25:39, Initializing PGVectorStore schema for table: vector_store in schema: public
+2026-02-20 14:25:39, vectorTableValidationsEnabled false
+2026-02-20 14:29:40, Generated JSON Schema:
+{
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
+  "type" : "object",
+  "properties" : {
+    "location" : {
+      "type" : "string"
+    },
+    "shops" : {
+      "type" : "array",
+      "items" : {
+        "type" : "object",
+        "properties" : {
+          "address" : {
+            "type" : "string"
+          },
+          "description" : {
+            "type" : "string"
+          },
+          "latitude" : {
+            "type" : "number",
+            "format" : "double"
+          },
+          "longitude" : {
+            "type" : "number",
+            "format" : "double"
+          },
+          "menu" : {
+            "type" : "array",
+            "items" : {
+              "type" : "string"
+            }
+          },
+          "name" : {
+            "type" : "string"
+          }
+        },
+        "required" : [ "address", "description", "latitude", "longitude", "menu", "name" ],
+        "description" : "이름, 설명, 주소, 좌표"
+      }
+    }
+  },
+  "required" : [ "location", "shops" ],
+  "description" : "지역, 구분",
+  "additionalProperties" : false
+}
+2026-02-20 14:29:40, Using the vector table name: chat_pgvector. Is empty: false
+2026-02-20 14:29:40, Using the vector table name: vector_store. Is empty: false
+2026-02-20 14:29:40, Initializing PGVectorStore schema for table: vector_store in schema: public
+2026-02-20 14:29:40, vectorTableValidationsEnabled false
+2026-02-20 14:33:19, Generated JSON Schema:
+{
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
+  "type" : "object",
+  "properties" : {
+    "location" : {
+      "type" : "string"
+    },
+    "shops" : {
+      "type" : "array",
+      "items" : {
+        "type" : "object",
+        "properties" : {
+          "address" : {
+            "type" : "string"
+          },
+          "description" : {
+            "type" : "string"
+          },
+          "latitude" : {
+            "type" : "number",
+            "format" : "double"
+          },
+          "longitude" : {
+            "type" : "number",
+            "format" : "double"
+          },
+          "menu" : {
+            "type" : "array",
+            "items" : {
+              "type" : "string"
+            }
+          },
+          "name" : {
+            "type" : "string"
+          }
+        },
+        "required" : [ "address", "description", "latitude", "longitude", "menu", "name" ],
+        "description" : "이름, 설명, 주소, 좌표"
+      }
+    }
+  },
+  "required" : [ "location", "shops" ],
+  "description" : "지역, 구분",
+  "additionalProperties" : false
+}
+2026-02-20 14:33:19, Using the vector table name: chat_pgvector. Is empty: false
+2026-02-20 14:33:19, Using the vector table name: vector_store. Is empty: false
+2026-02-20 14:33:19, Initializing PGVectorStore schema for table: vector_store in schema: public
+2026-02-20 14:33:19, vectorTableValidationsEnabled false
+2026-02-20 14:33:36, Generated JSON Schema:
+{
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
+  "type" : "object",
+  "properties" : {
+    "location" : {
+      "type" : "string"
+    },
+    "shops" : {
+      "type" : "array",
+      "items" : {
+        "type" : "object",
+        "properties" : {
+          "address" : {
+            "type" : "string"
+          },
+          "description" : {
+            "type" : "string"
+          },
+          "latitude" : {
+            "type" : "number",
+            "format" : "double"
+          },
+          "longitude" : {
+            "type" : "number",
+            "format" : "double"
+          },
+          "menu" : {
+            "type" : "array",
+            "items" : {
+              "type" : "string"
+            }
+          },
+          "name" : {
+            "type" : "string"
+          }
+        },
+        "required" : [ "address", "description", "latitude", "longitude", "menu", "name" ],
+        "description" : "이름, 설명, 주소, 좌표"
+      }
+    }
+  },
+  "required" : [ "location", "shops" ],
+  "description" : "지역, 구분",
+  "additionalProperties" : false
+}
+2026-02-20 14:33:37, Using the vector table name: chat_pgvector. Is empty: false
+2026-02-20 14:33:37, Using the vector table name: vector_store. Is empty: false
+2026-02-20 14:33:37, Initializing PGVectorStore schema for table: vector_store in schema: public
+2026-02-20 14:33:37, vectorTableValidationsEnabled false
+2026-02-20 14:33:59, Generated JSON Schema:
+{
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
+  "type" : "object",
+  "properties" : {
+    "location" : {
+      "type" : "string"
+    },
+    "shops" : {
+      "type" : "array",
+      "items" : {
+        "type" : "object",
+        "properties" : {
+          "address" : {
+            "type" : "string"
+          },
+          "description" : {
+            "type" : "string"
+          },
+          "latitude" : {
+            "type" : "number",
+            "format" : "double"
+          },
+          "longitude" : {
+            "type" : "number",
+            "format" : "double"
+          },
+          "menu" : {
+            "type" : "array",
+            "items" : {
+              "type" : "string"
+            }
+          },
+          "name" : {
+            "type" : "string"
+          }
+        },
+        "required" : [ "address", "description", "latitude", "longitude", "menu", "name" ],
+        "description" : "이름, 설명, 주소, 좌표"
+      }
+    }
+  },
+  "required" : [ "location", "shops" ],
+  "description" : "지역, 구분",
+  "additionalProperties" : false
+}
+2026-02-20 14:34:00, Using the vector table name: chat_pgvector. Is empty: false
+2026-02-20 14:34:00, Using the vector table name: vector_store. Is empty: false
+2026-02-20 14:34:00, Initializing PGVectorStore schema for table: vector_store in schema: public
+2026-02-20 14:34:00, vectorTableValidationsEnabled false
+2026-02-20 14:34:22, Generated JSON Schema:
+{
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
+  "type" : "object",
+  "properties" : {
+    "location" : {
+      "type" : "string"
+    },
+    "shops" : {
+      "type" : "array",
+      "items" : {
+        "type" : "object",
+        "properties" : {
+          "address" : {
+            "type" : "string"
+          },
+          "description" : {
+            "type" : "string"
+          },
+          "latitude" : {
+            "type" : "number",
+            "format" : "double"
+          },
+          "longitude" : {
+            "type" : "number",
+            "format" : "double"
+          },
+          "menu" : {
+            "type" : "array",
+            "items" : {
+              "type" : "string"
+            }
+          },
+          "name" : {
+            "type" : "string"
+          }
+        },
+        "required" : [ "address", "description", "latitude", "longitude", "menu", "name" ],
+        "description" : "이름, 설명, 주소, 좌표"
+      }
+    }
+  },
+  "required" : [ "location", "shops" ],
+  "description" : "지역, 구분",
+  "additionalProperties" : false
+}
+2026-02-20 14:34:22, Using the vector table name: chat_pgvector. Is empty: false
+2026-02-20 14:34:22, Using the vector table name: vector_store. Is empty: false
+2026-02-20 14:34:22, Initializing PGVectorStore schema for table: vector_store in schema: public
+2026-02-20 14:34:22, vectorTableValidationsEnabled false
+2026-02-20 14:34:33, Generated JSON Schema:
+{
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
+  "type" : "object",
+  "properties" : {
+    "location" : {
+      "type" : "string"
+    },
+    "shops" : {
+      "type" : "array",
+      "items" : {
+        "type" : "object",
+        "properties" : {
+          "address" : {
+            "type" : "string"
+          },
+          "description" : {
+            "type" : "string"
+          },
+          "latitude" : {
+            "type" : "number",
+            "format" : "double"
+          },
+          "longitude" : {
+            "type" : "number",
+            "format" : "double"
+          },
+          "menu" : {
+            "type" : "array",
+            "items" : {
+              "type" : "string"
+            }
+          },
+          "name" : {
+            "type" : "string"
+          }
+        },
+        "required" : [ "address", "description", "latitude", "longitude", "menu", "name" ],
+        "description" : "이름, 설명, 주소, 좌표"
+      }
+    }
+  },
+  "required" : [ "location", "shops" ],
+  "description" : "지역, 구분",
+  "additionalProperties" : false
+}
+2026-02-20 14:34:33, Using the vector table name: chat_pgvector. Is empty: false
+2026-02-20 14:34:33, Using the vector table name: vector_store. Is empty: false
+2026-02-20 14:34:33, Initializing PGVectorStore schema for table: vector_store in schema: public
+2026-02-20 14:34:33, vectorTableValidationsEnabled false
+2026-02-20 14:34:36, Generated JSON Schema:
+{
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
+  "type" : "object",
+  "properties" : {
+    "location" : {
+      "type" : "string"
+    },
+    "shops" : {
+      "type" : "array",
+      "items" : {
+        "type" : "object",
+        "properties" : {
+          "address" : {
+            "type" : "string"
+          },
+          "description" : {
+            "type" : "string"
+          },
+          "latitude" : {
+            "type" : "number",
+            "format" : "double"
+          },
+          "longitude" : {
+            "type" : "number",
+            "format" : "double"
+          },
+          "menu" : {
+            "type" : "array",
+            "items" : {
+              "type" : "string"
+            }
+          },
+          "name" : {
+            "type" : "string"
+          }
+        },
+        "required" : [ "address", "description", "latitude", "longitude", "menu", "name" ],
+        "description" : "이름, 설명, 주소, 좌표"
+      }
+    }
+  },
+  "required" : [ "location", "shops" ],
+  "description" : "지역, 구분",
+  "additionalProperties" : false
+}
+2026-02-20 14:34:36, Using the vector table name: chat_pgvector. Is empty: false
+2026-02-20 14:34:36, Using the vector table name: vector_store. Is empty: false
+2026-02-20 14:34:36, Initializing PGVectorStore schema for table: vector_store in schema: public
+2026-02-20 14:34:36, vectorTableValidationsEnabled false
