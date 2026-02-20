@@ -39,6 +39,13 @@ dependencies {
     implementation 'org.springframework.ai:spring-ai-openai'
     implementation 'org.springframework.ai:spring-ai-starter-model-openai'
 
+    // pgvector
+    implementation 'org.springframework.ai:spring-ai-starter-vector-store-pgvector'
+    implementation 'org.springframework.ai:spring-ai-advisors-vector-store'
+
+    // jdbc chat memory
+    implementation 'org.springframework.ai:spring-ai-starter-model-chat-memory-repository-jdbc'
+
     // test
     testImplementation 'io.projectreactor:reactor-test'
 
