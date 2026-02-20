@@ -193,3 +193,53 @@
 2026-02-20 13:05:31, Using the vector table name: vector_store. Is empty: false
 2026-02-20 13:05:31, Initializing PGVectorStore schema for table: vector_store in schema: public
 2026-02-20 13:05:31, vectorTableValidationsEnabled false
+2026-02-20 13:16:34, Generated JSON Schema:
+{
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
+  "type" : "object",
+  "properties" : {
+    "location" : {
+      "type" : "string"
+    },
+    "shops" : {
+      "type" : "array",
+      "items" : {
+        "type" : "object",
+        "properties" : {
+          "address" : {
+            "type" : "string"
+          },
+          "description" : {
+            "type" : "string"
+          },
+          "latitude" : {
+            "type" : "number",
+            "format" : "double"
+          },
+          "longitude" : {
+            "type" : "number",
+            "format" : "double"
+          },
+          "menu" : {
+            "type" : "array",
+            "items" : {
+              "type" : "string"
+            }
+          },
+          "name" : {
+            "type" : "string"
+          }
+        },
+        "required" : [ "address", "description", "latitude", "longitude", "menu", "name" ],
+        "description" : "이름, 설명, 주소, 좌표"
+      }
+    }
+  },
+  "required" : [ "location", "shops" ],
+  "description" : "지역, 구분",
+  "additionalProperties" : false
+}
+2026-02-20 13:16:34, Using the vector table name: chat_pgvector. Is empty: false
+2026-02-20 13:16:35, Using the vector table name: vector_store. Is empty: false
+2026-02-20 13:16:35, Initializing PGVectorStore schema for table: vector_store in schema: public
+2026-02-20 13:16:35, vectorTableValidationsEnabled false
