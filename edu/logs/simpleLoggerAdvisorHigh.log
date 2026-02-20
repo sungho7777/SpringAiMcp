@@ -1906,3 +1906,22 @@ Translated query:
 ', metadata={messageType=USER}, messageType=USER}
 2026-02-20 14:23:09, response: [SimpleLoggerAdvisor] Custom response: Generation[assistantMessage=AssistantMessage [messageType=ASSISTANT, toolCalls=[], textContent=북미의 AI 산업 트렌드는?, metadata={role=ASSISTANT, messageType=ASSISTANT, finishReason=STOP, refusal=, index=0, annotations=[], id=chatcmpl-DBDGmse9NSz8yRLjDbtEIuCnNUJeC}], chatGenerationMetadata=DefaultChatGenerationMetadata[finishReason='STOP', filters=0, metadata=0]]
 2026-02-20 14:23:12, response: [SimpleLoggerAdvisor] Custom response: Generation[assistantMessage=AssistantMessage [messageType=ASSISTANT, toolCalls=[], textContent=AI 전공자를 위한 북미 지역의 경향은 산업계로의 취업이 점점 쏠리고 있으며, 학계로 이동하는 인재는 점차 감소하는 추세입니다. 2011년에 AI 전공 신규 박사의 산업계와 학계 진출률이 거의 비슷했으나, 2022년에는 산업계로의 진출 비율이 크게 증가하고 학계로의 진출 비율은 감소했습니다., metadata={role=ASSISTANT, messageType=ASSISTANT, refusal=, finishReason=STOP, index=0, annotations=[], id=chatcmpl-DBDGoVCO8pBtRHFNKhJCvzDsmFa10, reasoningContent=}], chatGenerationMetadata=DefaultChatGenerationMetadata[finishReason='STOP', filters=0, metadata=0]]
+2026-02-20 14:24:20, request: [SimpleLoggerAdvisor] Custom request: UserMessage{content='국제기구 인공지능 동향을 요약해줘', metadata={messageType=USER}, messageType=USER}
+2026-02-20 14:24:20, request: [SimpleLoggerAdvisor] Custom request: UserMessage{content='You are an expert at information retrieval and search optimization.
+Your task is to generate 3 different versions of the given query.
+
+Each variant must cover different perspectives or aspects of the topic,
+while maintaining the core intent of the original query. The goal is to
+expand the search space and improve the chances of finding relevant information.
+
+Do not explain your choices or add any other text.
+Provide the query variants separated by newlines.
+
+Original query: 국제기구 인공지능 동향을 요약해줘
+
+Query variants:
+', metadata={messageType=USER}, messageType=USER}
+2026-02-20 14:24:23, response: [SimpleLoggerAdvisor] Custom response: Generation[assistantMessage=AssistantMessage [messageType=ASSISTANT, toolCalls=[], textContent=1. 최근 국제기구들이 발표한 인공지능 관련 보고서를 분석해줘
+2. 전 세계 국제기구들이 추진하는 인공지능 정책에 대해 조사해줘
+3. 국제기구 간 인공지능 협력 사례와 그 영향을 설명해줘, metadata={role=ASSISTANT, messageType=ASSISTANT, finishReason=STOP, refusal=, index=0, annotations=[], id=chatcmpl-DBDHxWzjyn2zJX9wA6AZAcplq1qQ4}], chatGenerationMetadata=DefaultChatGenerationMetadata[finishReason='STOP', filters=0, metadata=0]]
+2026-02-20 14:24:27, response: [SimpleLoggerAdvisor] Custom response: Generation[assistantMessage=AssistantMessage [messageType=ASSISTANT, toolCalls=[], textContent=OECD는 2019년 'AI에 관한 이사회의 권고사항'에서 인권과 민주적 가치를 존중하는 AI 사용을 장려하는 원칙을 마련했다. 이 원칙은 포용적 성장, 인간 중심의 가치와 공정성, 투명성, 보안성, 책임성을 포함한다. 또한, AI 연구개발 투자와 인적 역량 강화 등을 정책 입안자를 위한 원칙으로 제시한다. 2020년에는 'OECD AI 정책관측소'를 창설하여 회원국과 전 세계 국가들이 원칙을 실행하도록 지원하고 관련 정보를 제공하고 있다., metadata={role=ASSISTANT, messageType=ASSISTANT, refusal=, finishReason=STOP, index=0, annotations=[], id=chatcmpl-DBDI1iBF3OspibhUkTHb2sqIW3VHD, reasoningContent=}], chatGenerationMetadata=DefaultChatGenerationMetadata[finishReason='STOP', filters=0, metadata=0]]
