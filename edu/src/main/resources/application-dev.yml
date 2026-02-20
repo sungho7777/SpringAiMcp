@@ -99,3 +99,5 @@ springdoc:
       paths-to-match: /ch5/**
     - group: Chapter_6_Tool_Calling_Controller
       paths-to-match: /ch6/**
+    - group: Chapter_7_Embedding_Model_Controller
+      paths-to-match: /ch7/**
