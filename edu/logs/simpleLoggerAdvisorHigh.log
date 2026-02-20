@@ -932,3 +932,210 @@
 2026-02-20 14:10:54, Splitting up document into 2 chunks.
 2026-02-20 14:10:54, Splitting up document into 2 chunks.
 2026-02-20 14:10:54, Splitting up document into 2 chunks.
+2026-02-20 14:13:37, Generated JSON Schema:
+{
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
+  "type" : "object",
+  "properties" : {
+    "location" : {
+      "type" : "string"
+    },
+    "shops" : {
+      "type" : "array",
+      "items" : {
+        "type" : "object",
+        "properties" : {
+          "address" : {
+            "type" : "string"
+          },
+          "description" : {
+            "type" : "string"
+          },
+          "latitude" : {
+            "type" : "number",
+            "format" : "double"
+          },
+          "longitude" : {
+            "type" : "number",
+            "format" : "double"
+          },
+          "menu" : {
+            "type" : "array",
+            "items" : {
+              "type" : "string"
+            }
+          },
+          "name" : {
+            "type" : "string"
+          }
+        },
+        "required" : [ "address", "description", "latitude", "longitude", "menu", "name" ],
+        "description" : "이름, 설명, 주소, 좌표"
+      }
+    }
+  },
+  "required" : [ "location", "shops" ],
+  "description" : "지역, 구분",
+  "additionalProperties" : false
+}
+2026-02-20 14:13:38, Using the vector table name: chat_pgvector. Is empty: false
+2026-02-20 14:13:38, Using the vector table name: vector_store. Is empty: false
+2026-02-20 14:13:38, Initializing PGVectorStore schema for table: vector_store in schema: public
+2026-02-20 14:13:38, vectorTableValidationsEnabled false
+2026-02-20 14:14:01, request: [SimpleLoggerAdvisor] Custom request: UserMessage{content='AI 기술에 대해 알려줘
+
+Context information is below, surrounded by ---------------------
+
+---------------------
+유   대표는       한국이       세계      최고     수준의       정보통신기술(ICT)             인프라를         기반으로         ICT   강국     반열                                                                              
+
+              에   올랐던       것처럼        인프라에서          출발하는         성공      방정식이         AI시대에도         적용될        수   있다고       강조                                                                              
+
+              하고     AI  인프라        슈퍼     하이웨이를           구축해       한국이        AI  G3로     도약할       수    있도록       앞장서겠다고                                                                                     
+
+              말했다.                                                                                                                                                                                              
+
+                먼저     국내     지역     거점에       100메가와트(MW)             이상     전력이       필요한       하이퍼스케일            AI  DC를     구축                                                                              
+
+              하고     향후     규모를       기가와트(GW)급             이상으로         확장한다는          복안이다.         AI  DC를     지역     거점에       구                                                                            
+
+              축하면       수소,     태양광,       풍력     등   지역의        신재생에너지를              활용할       수    있고     해저     케이블을         통한                                                                              
+
+              글로벌       확장도       쉽다는       설명이다.         SK텔레콤은          SK가     보유하고         있는     고효율       차세대        반도체와                                                                                 
+              액침     냉각     등    에너지       솔루션,       AI  클러스터         운영     역량을       결합하면         더   저렴한       비용으로         효율                                                                              
+
+              적인     AI  DC를     구축할       수   있다고       강조했다.                                                                                                                                                  
+
+                앞서     SK텔레콤은          2024년      12월    판교에서         AI  DC    테스트베드를             오픈할       계획이다.         엔비디아                                                                                 
+
+              의   최신     칩과     SK하이닉스          HBM     등   첨단     반도체부터           차세대       액체     냉각      솔루션,      GPU    가상화                                                                                
+              솔루션,       AI  에너지       최적화       기술     등을      구현했다.         SK텔레콤은          GW급      AI  DC를     통해      중장기적
+업데이트된           AI  정의는       포괄적이며           간단한       것부터       복잡한       것까지       다양한       시스템을         포괄한                                                                                
+
+              다.   AI는    다양한       상황에       적용할       수    있는     기술과       기법의        집합을       나타낸다.        머신러닝과           같은                                                                              
+
+                                                                    - 161 -
+AI  기술의       발전이       가속화됨에           따라,     미래      인재를       양성하고         교육     시스템을         혁신하는         것이                                                                              
+
+              필수적이다.          초·중등          교육     과정에는         AI   디지털       교과서를         도입하여         학생들이         일찍부터         AI                                                                           
+
+              기초     지식을       습득할       수   있도록       해야     한다.     이러한       AI  기초     교육은       기본적인         코딩     기술과       데                                                                            
+
+              이터     이해력을         포함하며,         학생들이         실생활에서          AI를    활용하는         방법을       학습할        수   있도록       돕                                                                            
+              는다.     대학과       연구기관에서는              고급     AI  기술과        응용     연구를       지원하여         전문     인재를       양성하고,                                                                                 
+
+              AI의    최첨단      기술      개발을       주도할      수    있는     연구     환경을       조성해야         한다.                                                                                                          
+
+                AI  확산이       노동시장에           미치는       영향을       완화하기         위해     기존      인력을       대상으로         한   재교육       프                                                                            
+
+              로그램이         필요하다.        이를      위해     AI  기술     트레이닝         프로그램과           평생     학습      플랫폼을         운영하여                                                                                 
+              노동자들이          새로운        기술을       습득하고,        변화하는         산업     환경에        유연하게         적응할       수   있도록       지                                                                            
+
+              원해야       한다.     특히,     직무     전환이       필요한       직업군을         대상으로         한    맞춤형       교육과정과           실무     중                                                                            
+
+              심의     AI  활용     교육을       강화해야         한다.                                                                                                                                                      
+
+                                                                    - 319 -
+---------------------
+
+Given the context and provided history information and not prior knowledge,
+reply to the user comment. If the answer is not in the context, inform
+the user that you can't answer the question.
+', metadata={messageType=USER}, messageType=USER}
+2026-02-20 14:14:08, response: [SimpleLoggerAdvisor] Custom response: Generation[assistantMessage=AssistantMessage [messageType=ASSISTANT, toolCalls=[], textContent=AI 기술에 대해 제공된 정보에 따르면, AI는 다양한 상황에서 적용할 수 있는 기술과 기법의 집합을 나타냅니다. 머신러닝 같은 AI 기술의 발전이 가속화되면서, 미래 인재 양성과 교육 시스템 혁신이 필수적입니다. 초·중등 교육 과정에 AI 디지털 교과서를 도입하여 학생들이 AI 기초 지식을 습득할 수 있게 하고, 대학과 연구기관에서는 고급 AI 기술과 응용 연구를 지원하여 전문 인재를 양성해야 합니다. AI 확산이 노동시장에 미치는 영향을 완화하기 위해 기존 인력을 대상으로 한 재교육 프로그램이 필요하며, 평생 학습 플랫폼을 운영하여 노동자들이 새로운 기술을 습득하고 변화하는 산업 환경에 적응할 수 있도록 지원해야 한다고 설명하고 있습니다.
+
+또한, 한국은 세계 최고 수준의 정보통신기술(ICT) 인프라를 기반으로 ICT 강국으로 자리매김했으며, 이러한 인프라에서 출발하는 성공 방정식이 AI 시대에도 적용될 수 있다고 유 대표가 강조했습니다. AI 인프라 구축 계획으로는 국내 지역 거점에 하이퍼스케일 AI 데이터센터를 구축하고, 수소, 태양광, 풍력 등 지역의 신재생에너지를 활용하는 방안을 포함하고 있습니다. SK텔레콤은 2024년 12월 판교에서 AI 데이터센터 테스트베드를 오픈할 계획이며, 이를 통해 중장기적으로 AI 기술 발전을 도모하고 있습니다., metadata={role=ASSISTANT, messageType=ASSISTANT, finishReason=STOP, refusal=, annotations=[], index=0, id=chatcmpl-DBD7yOJLkiHAVYDyvmBoX9BMtSaiJ, reasoningContent=}], chatGenerationMetadata=DefaultChatGenerationMetadata[finishReason='STOP', filters=0, metadata=0]]
+2026-02-20 14:14:26, request: [SimpleLoggerAdvisor] Custom request: UserMessage{content='우주공학이 AI 에 미치는 영향은?
+
+Context information is below, surrounded by ---------------------
+
+---------------------
+또한,     AI  학습을       위한     온라인       교육     플랫폼과         실습     환경을       구축하여         누구나       시간과       장소에                                                                                
+
+              구애받지         않고     AI  교육에       접근할       수    있도록       해야     한다.     특히,     지방의        AI  교육     기관을       확대                                                                              
+
+              하고,     지역     산업과       연계한        AI  전문     인재      양성     프로그램을           운영함으로써             지역     균형     발전을                                                                                
+
+              도모해야        한다.                                                                                                                                                                                   
+
+                 3.  기대효과                                                                                                                                                                                       
+
+                2024년은       AI  산업이       기술적       도약과       함께     사회적·윤리적              과제를       해결하기         위한     해법을       본                                                                            
+
+              격적으로        모색하는         전환점으로          평가된다.         본   연구에서         제안된       정책은       AI  기술     발전과      사회적                                                                                
+
+              책임     간의     균형을       유지하며,         국내     AI  산업의       지속     가능성과         글로벌       경쟁력을        동시에       강화하                                                                                
+              는   데   기여할       것이다.       이를     통해     AI  기술의       빠른     확산      속에서       정부와       민간이       협력하여        신뢰                                                                              
+
+              기반의       기술     활용     환경과      효과적인         산업     생태계를         구축하는        데    필요한      방향성을         제언한다.                                                                                    
+
+                AI의    발전은       산업      혁신과       경제성장을           촉진하는         원동력인          동시에,       윤리적       문제와       기술적                                                                                
+
+              위험     관리라는         중요한       과제를       함께     제기한다.         초거대       AI와    생성     AI는     의료,     교육,     공공행정                                                                                 
+              등   사회적       가치가       높은     분야에서         핵심적인         도구로       자리      잡으며,       AI  기반     산업     구조     전환과                                                                                
+
+              새로운       경제적       기회를       창출할       것으로       기대된다.        동시에,       이    기술들이        가져오는         윤리적       도전
+제7장         인공지능             교육       및    인력       동향                                                                                                              
+
+                제1절       교육       분야                                                                                                                                                                           
+
+                 1.  AI  교육     현황     및    추이   327)                                                                                                                                                           
+
+                Stanford   HAI의     AI  Index   보고서는        북미(미국        및    캐나다)      및   유럽     지역에서의          대학     및    초중고                                                                               
+
+              의   전산학      및    AI 교육     추이와       분석하고        ChatGPT와       같은     AI  기술의       활용    현황을       분석하였다.                                                                                      
+
+                최근     북미지역(미국과              캐나다)의         전산학(CS:       Computer      Science)    및   관련     학과     졸업생·교수                                                                                     
+
+              진   수는     증가하는         추세를       보이며,       박사학위         소지자의         산업계       취업이       가속화되고          있다.     지난                                                                              
+
+              10년간      북미     소재     대학의      전산학       전공     졸업생       수가     지속적인         증가세를        보인     한편,     졸업자       중                                                                            
+
+              유학생의        비율은       일부      감소했다.        2022년     기준     북미지역         소재     신규     전산학       졸업생       수는     전년                                                                              
+              대비     ▲학사       7.9%   증가     ▲석사      2.5%   감소      ▲박사      11.2%    증가했다.        학위     취득자       중   유학생       비                                                                            
+
+              중은     지난     10년간      전반적으로           증가하고         있으나,       2022년에는        전년      대비     ▲석사(-14.8%)         ▲박                                                                              
+
+              사(-2.7%)     ▲학사(-1.1%)         순으로       감소했으며,          이는     트럼프       행정부       초기의       유학      비자     취득     제                                                                            
+
+              한   정책     및   코로나19        팬데믹       동안의      해외     이동     제한     조치에       따른     현상으로         추정된다.
+AI  기술의       발전이       가속화됨에           따라,     미래      인재를       양성하고         교육     시스템을         혁신하는         것이                                                                              
+
+              필수적이다.          초·중등          교육     과정에는         AI   디지털       교과서를         도입하여         학생들이         일찍부터         AI                                                                           
+
+              기초     지식을       습득할       수   있도록       해야     한다.     이러한       AI  기초     교육은       기본적인         코딩     기술과       데                                                                            
+
+              이터     이해력을         포함하며,         학생들이         실생활에서          AI를    활용하는         방법을       학습할        수   있도록       돕                                                                            
+              는다.     대학과       연구기관에서는              고급     AI  기술과        응용     연구를       지원하여         전문     인재를       양성하고,                                                                                 
+
+              AI의    최첨단      기술      개발을       주도할      수    있는     연구     환경을       조성해야         한다.                                                                                                          
+
+                AI  확산이       노동시장에           미치는       영향을       완화하기         위해     기존      인력을       대상으로         한   재교육       프                                                                            
+
+              로그램이         필요하다.        이를      위해     AI  기술     트레이닝         프로그램과           평생     학습      플랫폼을         운영하여                                                                                 
+              노동자들이          새로운        기술을       습득하고,        변화하는         산업     환경에        유연하게         적응할       수   있도록       지                                                                            
+
+              원해야       한다.     특히,     직무     전환이       필요한       직업군을         대상으로         한    맞춤형       교육과정과           실무     중                                                                            
+
+              심의     AI  활용     교육을       강화해야         한다.                                                                                                                                                      
+
+                                                                    - 319 -
+---------------------
+
+Given the context and provided history information and not prior knowledge,
+reply to the user comment. If the answer is not in the context, inform
+the user that you can't answer the question.
+', metadata={messageType=USER}, messageType=USER}
+2026-02-20 14:14:29, response: [SimpleLoggerAdvisor] Custom response: Generation[assistantMessage=AssistantMessage [messageType=ASSISTANT, toolCalls=[], textContent=죄송하지만 주어진 문맥에서는 우주공학이 AI에 미치는 영향에 대한 정보는 포함되어 있지 않습니다. 해당 질문에 대한 답변을 제공할 수 없습니다., metadata={role=ASSISTANT, messageType=ASSISTANT, finishReason=STOP, refusal=, annotations=[], index=0, id=chatcmpl-DBD8O7q8MxTCchivNitlz7uwXX6X0, reasoningContent=}], chatGenerationMetadata=DefaultChatGenerationMetadata[finishReason='STOP', filters=0, metadata=0]]
+2026-02-20 14:14:36, request: [SimpleLoggerAdvisor] Custom request: UserMessage{content='우주공학이 AI 에 미치는 영향은?
+
+Context information is below, surrounded by ---------------------
+
+---------------------
+---------------------
+
+Given the context and provided history information and not prior knowledge,
+reply to the user comment. If the answer is not in the context, inform
+the user that you can't answer the question.
+', metadata={messageType=USER}, messageType=USER}
+2026-02-20 14:14:38, response: [SimpleLoggerAdvisor] Custom response: Generation[assistantMessage=AssistantMessage [messageType=ASSISTANT, toolCalls=[], textContent=죄송하지만, 주어진 정보에서는 우주공학이 AI에 미치는 영향에 대한 내용을 찾을 수 없습니다. 이 주제에 대해 더 많은 정보가 필요하다면 추가 자료를 제공해 주시기 바랍니다., metadata={role=ASSISTANT, messageType=ASSISTANT, finishReason=STOP, refusal=, annotations=[], index=0, id=chatcmpl-DBD8XDHugNhvbIBFafJf2ZXY30Dr5, reasoningContent=}], chatGenerationMetadata=DefaultChatGenerationMetadata[finishReason='STOP', filters=0, metadata=0]]
