@@ -543,3 +543,392 @@
 2026-02-20 13:46:00, Using the vector table name: vector_store. Is empty: false
 2026-02-20 13:46:00, Initializing PGVectorStore schema for table: vector_store in schema: public
 2026-02-20 13:46:00, vectorTableValidationsEnabled false
+2026-02-20 14:08:32, Generated JSON Schema:
+{
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
+  "type" : "object",
+  "properties" : {
+    "location" : {
+      "type" : "string"
+    },
+    "shops" : {
+      "type" : "array",
+      "items" : {
+        "type" : "object",
+        "properties" : {
+          "address" : {
+            "type" : "string"
+          },
+          "description" : {
+            "type" : "string"
+          },
+          "latitude" : {
+            "type" : "number",
+            "format" : "double"
+          },
+          "longitude" : {
+            "type" : "number",
+            "format" : "double"
+          },
+          "menu" : {
+            "type" : "array",
+            "items" : {
+              "type" : "string"
+            }
+          },
+          "name" : {
+            "type" : "string"
+          }
+        },
+        "required" : [ "address", "description", "latitude", "longitude", "menu", "name" ],
+        "description" : "이름, 설명, 주소, 좌표"
+      }
+    }
+  },
+  "required" : [ "location", "shops" ],
+  "description" : "지역, 구분",
+  "additionalProperties" : false
+}
+2026-02-20 14:08:33, Using the vector table name: chat_pgvector. Is empty: false
+2026-02-20 14:08:33, Using the vector table name: vector_store. Is empty: false
+2026-02-20 14:08:33, Initializing PGVectorStore schema for table: vector_store in schema: public
+2026-02-20 14:08:33, vectorTableValidationsEnabled false
+2026-02-20 14:09:52, Processing PDF page: 1
+2026-02-20 14:09:53, Processing PDF page: 37
+2026-02-20 14:09:53, Processing PDF page: 73
+2026-02-20 14:09:53, Processing PDF page: 109
+2026-02-20 14:09:54, Processing PDF page: 145
+2026-02-20 14:09:54, Processing PDF page: 181
+2026-02-20 14:09:54, Processing PDF page: 217
+2026-02-20 14:09:55, Processing PDF page: 253
+2026-02-20 14:09:55, Processing PDF page: 289
+2026-02-20 14:09:55, Processing PDF page: 325
+2026-02-20 14:09:56, Processing PDF page: 361
+2026-02-20 14:09:56, Processed total 367 pages
+2026-02-20 14:09:56, Splitting up document into 2 chunks.
+2026-02-20 14:09:56, Splitting up document into 3 chunks.
+2026-02-20 14:09:56, Splitting up document into 3 chunks.
+2026-02-20 14:09:56, Splitting up document into 3 chunks.
+2026-02-20 14:09:56, Splitting up document into 3 chunks.
+2026-02-20 14:09:56, Splitting up document into 3 chunks.
+2026-02-20 14:09:56, Splitting up document into 3 chunks.
+2026-02-20 14:09:56, Splitting up document into 3 chunks.
+2026-02-20 14:09:56, Splitting up document into 3 chunks.
+2026-02-20 14:09:56, Splitting up document into 2 chunks.
+2026-02-20 14:09:56, Splitting up document into 3 chunks.
+2026-02-20 14:09:56, Splitting up document into 2 chunks.
+2026-02-20 14:09:56, Splitting up document into 2 chunks.
+2026-02-20 14:09:56, Splitting up document into 2 chunks.
+2026-02-20 14:09:56, Splitting up document into 2 chunks.
+2026-02-20 14:09:56, Splitting up document into 2 chunks.
+2026-02-20 14:09:56, Splitting up document into 2 chunks.
+2026-02-20 14:09:56, Splitting up document into 2 chunks.
+2026-02-20 14:09:56, Splitting up document into 2 chunks.
+2026-02-20 14:09:56, Splitting up document into 2 chunks.
+2026-02-20 14:09:56, Splitting up document into 2 chunks.
+2026-02-20 14:09:56, Splitting up document into 2 chunks.
+2026-02-20 14:09:56, Splitting up document into 3 chunks.
+2026-02-20 14:09:56, Splitting up document into 2 chunks.
+2026-02-20 14:09:56, Splitting up document into 2 chunks.
+2026-02-20 14:09:56, Splitting up document into 2 chunks.
+2026-02-20 14:09:56, Splitting up document into 2 chunks.
+2026-02-20 14:09:56, Splitting up document into 2 chunks.
+2026-02-20 14:09:56, Splitting up document into 2 chunks.
+2026-02-20 14:09:56, Splitting up document into 2 chunks.
+2026-02-20 14:09:56, Splitting up document into 2 chunks.
+2026-02-20 14:09:56, Splitting up document into 2 chunks.
+2026-02-20 14:09:56, Splitting up document into 2 chunks.
+2026-02-20 14:09:56, Splitting up document into 3 chunks.
+2026-02-20 14:09:56, Splitting up document into 2 chunks.
+2026-02-20 14:09:56, Splitting up document into 2 chunks.
+2026-02-20 14:09:56, Splitting up document into 2 chunks.
+2026-02-20 14:09:56, Splitting up document into 2 chunks.
+2026-02-20 14:09:56, Splitting up document into 2 chunks.
+2026-02-20 14:09:56, Splitting up document into 2 chunks.
+2026-02-20 14:09:56, Splitting up document into 2 chunks.
+2026-02-20 14:09:56, Splitting up document into 2 chunks.
+2026-02-20 14:09:56, Splitting up document into 2 chunks.
+2026-02-20 14:09:56, Splitting up document into 2 chunks.
+2026-02-20 14:09:56, Splitting up document into 3 chunks.
+2026-02-20 14:09:56, Splitting up document into 2 chunks.
+2026-02-20 14:09:56, Splitting up document into 2 chunks.
+2026-02-20 14:09:56, Splitting up document into 3 chunks.
+2026-02-20 14:09:56, Splitting up document into 2 chunks.
+2026-02-20 14:09:56, Splitting up document into 2 chunks.
+2026-02-20 14:09:56, Splitting up document into 2 chunks.
+2026-02-20 14:09:56, Splitting up document into 2 chunks.
+2026-02-20 14:09:56, Splitting up document into 2 chunks.
+2026-02-20 14:09:56, Splitting up document into 2 chunks.
+2026-02-20 14:09:56, Splitting up document into 3 chunks.
+2026-02-20 14:09:56, Splitting up document into 2 chunks.
+2026-02-20 14:09:56, Splitting up document into 2 chunks.
+2026-02-20 14:09:56, Splitting up document into 2 chunks.
+2026-02-20 14:09:56, Splitting up document into 2 chunks.
+2026-02-20 14:09:56, Splitting up document into 2 chunks.
+2026-02-20 14:09:56, Splitting up document into 2 chunks.
+2026-02-20 14:09:56, Splitting up document into 2 chunks.
+2026-02-20 14:09:56, Splitting up document into 2 chunks.
+2026-02-20 14:09:56, Splitting up document into 2 chunks.
+2026-02-20 14:09:56, Splitting up document into 2 chunks.
+2026-02-20 14:09:56, Splitting up document into 2 chunks.
+2026-02-20 14:09:56, Splitting up document into 3 chunks.
+2026-02-20 14:09:56, Splitting up document into 2 chunks.
+2026-02-20 14:09:56, Splitting up document into 2 chunks.
+2026-02-20 14:09:56, Splitting up document into 2 chunks.
+2026-02-20 14:09:56, Splitting up document into 2 chunks.
+2026-02-20 14:09:56, Splitting up document into 2 chunks.
+2026-02-20 14:09:56, Splitting up document into 2 chunks.
+2026-02-20 14:09:56, Splitting up document into 2 chunks.
+2026-02-20 14:09:56, Splitting up document into 2 chunks.
+2026-02-20 14:09:56, Splitting up document into 3 chunks.
+2026-02-20 14:09:56, Splitting up document into 2 chunks.
+2026-02-20 14:09:57, Splitting up document into 3 chunks.
+2026-02-20 14:09:57, Splitting up document into 3 chunks.
+2026-02-20 14:09:57, Splitting up document into 2 chunks.
+2026-02-20 14:09:57, Splitting up document into 3 chunks.
+2026-02-20 14:09:57, Splitting up document into 2 chunks.
+2026-02-20 14:09:57, Splitting up document into 2 chunks.
+2026-02-20 14:09:57, Splitting up document into 2 chunks.
+2026-02-20 14:09:57, Splitting up document into 2 chunks.
+2026-02-20 14:09:57, Splitting up document into 2 chunks.
+2026-02-20 14:09:57, Splitting up document into 2 chunks.
+2026-02-20 14:09:57, Splitting up document into 2 chunks.
+2026-02-20 14:09:57, Splitting up document into 2 chunks.
+2026-02-20 14:09:57, Splitting up document into 3 chunks.
+2026-02-20 14:09:57, Splitting up document into 2 chunks.
+2026-02-20 14:09:57, Splitting up document into 2 chunks.
+2026-02-20 14:09:57, Splitting up document into 2 chunks.
+2026-02-20 14:09:57, Splitting up document into 2 chunks.
+2026-02-20 14:09:57, Splitting up document into 2 chunks.
+2026-02-20 14:09:57, Splitting up document into 2 chunks.
+2026-02-20 14:09:57, Splitting up document into 2 chunks.
+2026-02-20 14:09:57, Splitting up document into 2 chunks.
+2026-02-20 14:09:57, Splitting up document into 2 chunks.
+2026-02-20 14:09:57, Splitting up document into 2 chunks.
+2026-02-20 14:09:57, Splitting up document into 3 chunks.
+2026-02-20 14:09:57, Splitting up document into 2 chunks.
+2026-02-20 14:09:57, Splitting up document into 2 chunks.
+2026-02-20 14:09:57, Splitting up document into 2 chunks.
+2026-02-20 14:09:57, Splitting up document into 2 chunks.
+2026-02-20 14:09:57, Splitting up document into 2 chunks.
+2026-02-20 14:09:57, Splitting up document into 2 chunks.
+2026-02-20 14:09:57, Splitting up document into 2 chunks.
+2026-02-20 14:09:57, Splitting up document into 3 chunks.
+2026-02-20 14:09:57, Splitting up document into 3 chunks.
+2026-02-20 14:09:57, Splitting up document into 2 chunks.
+2026-02-20 14:09:57, Splitting up document into 2 chunks.
+2026-02-20 14:09:57, Splitting up document into 2 chunks.
+2026-02-20 14:09:57, Splitting up document into 2 chunks.
+2026-02-20 14:09:57, Splitting up document into 2 chunks.
+2026-02-20 14:09:57, Splitting up document into 2 chunks.
+2026-02-20 14:09:57, Splitting up document into 2 chunks.
+2026-02-20 14:09:57, Splitting up document into 2 chunks.
+2026-02-20 14:09:57, Splitting up document into 2 chunks.
+2026-02-20 14:09:57, Splitting up document into 2 chunks.
+2026-02-20 14:09:57, Splitting up document into 2 chunks.
+2026-02-20 14:09:57, Splitting up document into 2 chunks.
+2026-02-20 14:09:57, Splitting up document into 2 chunks.
+2026-02-20 14:09:57, Splitting up document into 2 chunks.
+2026-02-20 14:09:57, Splitting up document into 2 chunks.
+2026-02-20 14:09:57, Splitting up document into 2 chunks.
+2026-02-20 14:09:57, Splitting up document into 2 chunks.
+2026-02-20 14:09:57, Splitting up document into 2 chunks.
+2026-02-20 14:09:57, Splitting up document into 2 chunks.
+2026-02-20 14:09:57, Splitting up document into 2 chunks.
+2026-02-20 14:09:57, Splitting up document into 2 chunks.
+2026-02-20 14:09:57, Splitting up document into 2 chunks.
+2026-02-20 14:09:57, Splitting up document into 3 chunks.
+2026-02-20 14:09:57, Splitting up document into 2 chunks.
+2026-02-20 14:09:57, Splitting up document into 2 chunks.
+2026-02-20 14:09:57, Splitting up document into 2 chunks.
+2026-02-20 14:09:57, Splitting up document into 3 chunks.
+2026-02-20 14:09:57, Splitting up document into 3 chunks.
+2026-02-20 14:09:57, Splitting up document into 2 chunks.
+2026-02-20 14:09:57, Splitting up document into 3 chunks.
+2026-02-20 14:09:57, Splitting up document into 2 chunks.
+2026-02-20 14:09:57, Splitting up document into 2 chunks.
+2026-02-20 14:09:57, Splitting up document into 2 chunks.
+2026-02-20 14:09:57, Splitting up document into 3 chunks.
+2026-02-20 14:09:57, Splitting up document into 3 chunks.
+2026-02-20 14:09:57, Splitting up document into 3 chunks.
+2026-02-20 14:09:57, Splitting up document into 2 chunks.
+2026-02-20 14:09:57, Splitting up document into 3 chunks.
+2026-02-20 14:09:57, Splitting up document into 3 chunks.
+2026-02-20 14:09:57, Splitting up document into 2 chunks.
+2026-02-20 14:09:57, Splitting up document into 2 chunks.
+2026-02-20 14:09:57, Splitting up document into 2 chunks.
+2026-02-20 14:09:57, Splitting up document into 2 chunks.
+2026-02-20 14:09:57, Splitting up document into 2 chunks.
+2026-02-20 14:09:57, Splitting up document into 2 chunks.
+2026-02-20 14:09:57, Splitting up document into 2 chunks.
+2026-02-20 14:09:57, Splitting up document into 2 chunks.
+2026-02-20 14:09:57, Splitting up document into 2 chunks.
+2026-02-20 14:09:57, Splitting up document into 2 chunks.
+2026-02-20 14:09:57, Splitting up document into 2 chunks.
+2026-02-20 14:09:57, Splitting up document into 2 chunks.
+2026-02-20 14:09:57, Splitting up document into 2 chunks.
+2026-02-20 14:09:57, Splitting up document into 2 chunks.
+2026-02-20 14:09:57, Splitting up document into 2 chunks.
+2026-02-20 14:09:57, Splitting up document into 2 chunks.
+2026-02-20 14:09:57, Splitting up document into 2 chunks.
+2026-02-20 14:09:57, Splitting up document into 2 chunks.
+2026-02-20 14:09:57, Splitting up document into 2 chunks.
+2026-02-20 14:09:57, Splitting up document into 2 chunks.
+2026-02-20 14:09:57, Splitting up document into 2 chunks.
+2026-02-20 14:09:57, Splitting up document into 3 chunks.
+2026-02-20 14:09:57, Splitting up document into 2 chunks.
+2026-02-20 14:09:57, Splitting up document into 2 chunks.
+2026-02-20 14:09:57, Splitting up document into 2 chunks.
+2026-02-20 14:09:57, Splitting up document into 2 chunks.
+2026-02-20 14:09:57, Splitting up document into 2 chunks.
+2026-02-20 14:09:57, Splitting up document into 2 chunks.
+2026-02-20 14:09:57, Splitting up document into 2 chunks.
+2026-02-20 14:09:57, Splitting up document into 2 chunks.
+2026-02-20 14:09:57, Splitting up document into 2 chunks.
+2026-02-20 14:09:57, Splitting up document into 2 chunks.
+2026-02-20 14:09:57, Splitting up document into 2 chunks.
+2026-02-20 14:09:57, Splitting up document into 2 chunks.
+2026-02-20 14:09:57, Splitting up document into 2 chunks.
+2026-02-20 14:09:57, Splitting up document into 2 chunks.
+2026-02-20 14:09:57, Splitting up document into 2 chunks.
+2026-02-20 14:09:57, Splitting up document into 3 chunks.
+2026-02-20 14:09:57, Splitting up document into 2 chunks.
+2026-02-20 14:09:57, Splitting up document into 2 chunks.
+2026-02-20 14:09:57, Splitting up document into 2 chunks.
+2026-02-20 14:09:57, Splitting up document into 2 chunks.
+2026-02-20 14:09:57, Splitting up document into 3 chunks.
+2026-02-20 14:09:57, Splitting up document into 2 chunks.
+2026-02-20 14:09:57, Splitting up document into 2 chunks.
+2026-02-20 14:09:57, Splitting up document into 2 chunks.
+2026-02-20 14:09:57, Splitting up document into 2 chunks.
+2026-02-20 14:09:57, Splitting up document into 2 chunks.
+2026-02-20 14:09:57, Splitting up document into 2 chunks.
+2026-02-20 14:09:57, Splitting up document into 2 chunks.
+2026-02-20 14:09:57, Splitting up document into 2 chunks.
+2026-02-20 14:09:57, Splitting up document into 2 chunks.
+2026-02-20 14:09:57, Splitting up document into 3 chunks.
+2026-02-20 14:09:57, Splitting up document into 2 chunks.
+2026-02-20 14:09:57, Splitting up document into 2 chunks.
+2026-02-20 14:09:57, Splitting up document into 2 chunks.
+2026-02-20 14:09:57, Splitting up document into 2 chunks.
+2026-02-20 14:09:57, Splitting up document into 2 chunks.
+2026-02-20 14:09:57, Splitting up document into 3 chunks.
+2026-02-20 14:09:57, Splitting up document into 2 chunks.
+2026-02-20 14:09:57, Splitting up document into 2 chunks.
+2026-02-20 14:09:57, Splitting up document into 2 chunks.
+2026-02-20 14:09:57, Splitting up document into 2 chunks.
+2026-02-20 14:09:57, Splitting up document into 2 chunks.
+2026-02-20 14:09:57, Splitting up document into 2 chunks.
+2026-02-20 14:09:57, Splitting up document into 2 chunks.
+2026-02-20 14:09:57, Splitting up document into 2 chunks.
+2026-02-20 14:09:57, Splitting up document into 2 chunks.
+2026-02-20 14:09:57, Splitting up document into 3 chunks.
+2026-02-20 14:09:57, Splitting up document into 2 chunks.
+2026-02-20 14:09:57, Splitting up document into 2 chunks.
+2026-02-20 14:09:57, Splitting up document into 2 chunks.
+2026-02-20 14:09:57, Splitting up document into 2 chunks.
+2026-02-20 14:09:57, Splitting up document into 2 chunks.
+2026-02-20 14:09:57, Splitting up document into 2 chunks.
+2026-02-20 14:09:57, Splitting up document into 2 chunks.
+2026-02-20 14:09:57, Splitting up document into 2 chunks.
+2026-02-20 14:09:57, Splitting up document into 2 chunks.
+2026-02-20 14:09:57, Splitting up document into 2 chunks.
+2026-02-20 14:09:57, Splitting up document into 3 chunks.
+2026-02-20 14:09:57, Splitting up document into 2 chunks.
+2026-02-20 14:09:57, Splitting up document into 2 chunks.
+2026-02-20 14:09:57, Splitting up document into 2 chunks.
+2026-02-20 14:09:57, Splitting up document into 2 chunks.
+2026-02-20 14:09:57, Splitting up document into 2 chunks.
+2026-02-20 14:09:57, Splitting up document into 2 chunks.
+2026-02-20 14:09:57, Splitting up document into 2 chunks.
+2026-02-20 14:09:57, Splitting up document into 2 chunks.
+2026-02-20 14:09:57, Splitting up document into 2 chunks.
+2026-02-20 14:09:57, Splitting up document into 2 chunks.
+2026-02-20 14:09:57, Splitting up document into 2 chunks.
+2026-02-20 14:09:57, Splitting up document into 2 chunks.
+2026-02-20 14:09:57, Splitting up document into 2 chunks.
+2026-02-20 14:09:57, Splitting up document into 2 chunks.
+2026-02-20 14:09:57, Splitting up document into 2 chunks.
+2026-02-20 14:09:57, Splitting up document into 2 chunks.
+2026-02-20 14:09:57, Splitting up document into 2 chunks.
+2026-02-20 14:09:57, Splitting up document into 2 chunks.
+2026-02-20 14:09:57, Splitting up document into 2 chunks.
+2026-02-20 14:09:57, Splitting up document into 2 chunks.
+2026-02-20 14:09:57, Splitting up document into 2 chunks.
+2026-02-20 14:09:57, Splitting up document into 2 chunks.
+2026-02-20 14:09:57, Splitting up document into 2 chunks.
+2026-02-20 14:09:57, Splitting up document into 2 chunks.
+2026-02-20 14:09:57, Splitting up document into 2 chunks.
+2026-02-20 14:09:57, Splitting up document into 2 chunks.
+2026-02-20 14:09:57, Splitting up document into 2 chunks.
+2026-02-20 14:09:57, Splitting up document into 2 chunks.
+2026-02-20 14:09:57, Splitting up document into 2 chunks.
+2026-02-20 14:09:57, Splitting up document into 2 chunks.
+2026-02-20 14:09:57, Splitting up document into 2 chunks.
+2026-02-20 14:09:57, Splitting up document into 3 chunks.
+2026-02-20 14:09:57, Splitting up document into 2 chunks.
+2026-02-20 14:09:57, Splitting up document into 2 chunks.
+2026-02-20 14:09:57, Splitting up document into 2 chunks.
+2026-02-20 14:09:57, Splitting up document into 2 chunks.
+2026-02-20 14:09:57, Splitting up document into 2 chunks.
+2026-02-20 14:09:58, Splitting up document into 2 chunks.
+2026-02-20 14:09:58, Splitting up document into 2 chunks.
+2026-02-20 14:09:58, Splitting up document into 2 chunks.
+2026-02-20 14:09:58, Splitting up document into 2 chunks.
+2026-02-20 14:09:58, Splitting up document into 2 chunks.
+2026-02-20 14:09:58, Splitting up document into 2 chunks.
+2026-02-20 14:09:58, Splitting up document into 2 chunks.
+2026-02-20 14:09:58, Splitting up document into 2 chunks.
+2026-02-20 14:09:58, Splitting up document into 2 chunks.
+2026-02-20 14:09:58, Splitting up document into 3 chunks.
+2026-02-20 14:09:58, Splitting up document into 2 chunks.
+2026-02-20 14:09:58, Splitting up document into 2 chunks.
+2026-02-20 14:09:58, Splitting up document into 2 chunks.
+2026-02-20 14:09:58, Splitting up document into 2 chunks.
+2026-02-20 14:09:58, Splitting up document into 2 chunks.
+2026-02-20 14:09:58, Splitting up document into 3 chunks.
+2026-02-20 14:09:58, Splitting up document into 2 chunks.
+2026-02-20 14:09:58, Splitting up document into 2 chunks.
+2026-02-20 14:09:58, Splitting up document into 2 chunks.
+2026-02-20 14:09:58, Splitting up document into 2 chunks.
+2026-02-20 14:09:58, Splitting up document into 2 chunks.
+2026-02-20 14:09:58, Splitting up document into 2 chunks.
+2026-02-20 14:09:58, Splitting up document into 2 chunks.
+2026-02-20 14:09:58, Splitting up document into 2 chunks.
+2026-02-20 14:09:58, Splitting up document into 2 chunks.
+2026-02-20 14:09:58, Splitting up document into 2 chunks.
+2026-02-20 14:09:58, Splitting up document into 2 chunks.
+2026-02-20 14:09:58, Splitting up document into 2 chunks.
+2026-02-20 14:09:58, Splitting up document into 4 chunks.
+2026-02-20 14:09:58, Splitting up document into 4 chunks.
+2026-02-20 14:09:58, Splitting up document into 3 chunks.
+2026-02-20 14:09:58, Splitting up document into 4 chunks.
+2026-02-20 14:09:58, Splitting up document into 4 chunks.
+2026-02-20 14:09:58, Splitting up document into 4 chunks.
+2026-02-20 14:09:58, Splitting up document into 2 chunks.
+2026-02-20 14:10:44, Processing PDF page: 1
+2026-02-20 14:10:44, Processing PDF page: 2
+2026-02-20 14:10:44, Processing PDF page: 3
+2026-02-20 14:10:44, Processing PDF page: 4
+2026-02-20 14:10:44, Processing PDF page: 5
+2026-02-20 14:10:44, Processing PDF page: 6
+2026-02-20 14:10:44, Processing PDF page: 7
+2026-02-20 14:10:44, Processing PDF page: 8
+2026-02-20 14:10:44, Processed total 8 pages
+2026-02-20 14:10:44, Splitting up document into 2 chunks.
+2026-02-20 14:10:44, Splitting up document into 2 chunks.
+2026-02-20 14:10:44, Splitting up document into 2 chunks.
+2026-02-20 14:10:44, Splitting up document into 2 chunks.
+2026-02-20 14:10:44, Splitting up document into 2 chunks.
+2026-02-20 14:10:44, Splitting up document into 3 chunks.
+2026-02-20 14:10:44, Splitting up document into 3 chunks.
+2026-02-20 14:10:54, Processing PDF page: 1
+2026-02-20 14:10:54, Processing PDF page: 2
+2026-02-20 14:10:54, Processing PDF page: 3
+2026-02-20 14:10:54, Processing PDF page: 4
+2026-02-20 14:10:54, Processing PDF page: 5
+2026-02-20 14:10:54, Processed total 5 pages
+2026-02-20 14:10:54, Splitting up document into 2 chunks.
+2026-02-20 14:10:54, Splitting up document into 2 chunks.
+2026-02-20 14:10:54, Splitting up document into 2 chunks.
+2026-02-20 14:10:54, Splitting up document into 2 chunks.
